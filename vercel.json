@@ -1,15 +1,1 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/waitlist.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/waitlist",
-      "dest": "/api/waitlist.js"
-    }
-  ]
-}
+{}
