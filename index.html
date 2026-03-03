@@ -19,7 +19,7 @@
                 <a href="#plans">Plans</a>
                 <a href="#about">About</a>
                 <a href="#coverage">Coverage</a>
-                <a href="#activate" class="btn-primary-small">Get Started</a>
+                <a href="#waitlist" class="btn-primary-small">Join Waitlist</a>
             </div>
         </div>
     </nav>
@@ -32,9 +32,13 @@
                     <h1 class="hero-title">Talk Less.<br>Connect More.</h1>
                     <p class="hero-subtitle-jp">話すより、つながる</p>
                     <p class="hero-description">Prepaid mobile built for the generation that grew up online. No lock-in contracts, no confusing fine print, no corporate noise — just reliable data, fair pricing, and a brand that speaks your language.</p>
+                    <div class="launch-badge">
+                        <span class="badge-text">Launching February 2027</span>
+                        <span class="badge-subtext">Join the waitlist for early access</span>
+                    </div>
                     <div class="hero-cta">
-                        <a href="#plans" class="btn-primary">View Plans</a>
-                        <a href="#about" class="btn-secondary">Learn More</a>
+                        <a href="#waitlist" class="btn-primary">Join Waitlist</a>
+                        <a href="#plans" class="btn-secondary">View Plans</a>
                     </div>
                     <p class="hero-stat">
                         <span class="stat-number">73%</span>
@@ -96,7 +100,7 @@
                         <li>Data banking</li>
                         <li>28-day expiry</li>
                     </ul>
-                    <a href="#activate" class="btn-plan">Get Started</a>
+                    <a href="#waitlist" class="btn-plan">Join Waitlist</a>
                 </div>
 
                 <!-- Chat Plan (Most Popular) -->
@@ -117,7 +121,7 @@
                         <li>Intl. calls (10 countries)</li>
                         <li>28-day expiry</li>
                     </ul>
-                    <a href="#activate" class="btn-plan">Get Started</a>
+                    <a href="#waitlist" class="btn-plan">Join Waitlist</a>
                 </div>
 
                 <!-- Loud Plan -->
@@ -138,7 +142,7 @@
                         <li>5G included</li>
                         <li>28-day expiry</li>
                     </ul>
-                    <a href="#activate" class="btn-plan">Get Started</a>
+                    <a href="#waitlist" class="btn-plan">Join Waitlist</a>
                 </div>
             </div>
             <p class="plans-footer">All plans run on the Optus 4G/5G network. Activate online in 2 minutes. BYO SIM or we'll post one free.</p>
@@ -209,23 +213,104 @@
         </div>
     </section>
 
-    <!-- CTA / Activate -->
-    <section id="activate" class="activate">
+    <!-- Waitlist Section -->
+    <section id="waitlist" class="waitlist">
         <div class="container">
-            <div class="activate-content">
-                <h2 class="activate-title">Ready to switch?</h2>
-                <p class="activate-description">Activate online in 2 minutes. Keep your number. Cancel anytime.</p>
-                <div class="activate-options">
-                    <div class="activate-option">
-                        <h4>Got a SIM?</h4>
-                        <a href="#" class="btn-primary">Activate Now</a>
+            <div class="waitlist-content">
+                <div class="waitlist-header">
+                    <span class="section-label">JOIN THE WAITLIST</span>
+                    <h2 class="waitlist-title">Be first in line.</h2>
+                    <p class="waitlist-description">Join the waitlist for early access to small talk. We're launching in Sydney & Melbourne this February with exclusive perks for founding members.</p>
+                </div>
+
+                <div class="waitlist-benefits">
+                    <div class="benefit">
+                        <span class="benefit-icon">🎁</span>
+                        <h4>Founding member bonus</h4>
+                        <p>Extra 10GB data on your first recharge</p>
                     </div>
-                    <div class="activate-option">
-                        <h4>Need a SIM?</h4>
-                        <a href="#" class="btn-secondary">Order Free SIM</a>
+                    <div class="benefit">
+                        <span class="benefit-icon">💰</span>
+                        <h4>Early bird pricing</h4>
+                        <p>Lock in launch pricing for 6 months</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">✨</span>
+                        <h4>Priority activation</h4>
+                        <p>Skip the queue when we launch</p>
                     </div>
                 </div>
-                <p class="activate-note">eSIM activation available. Port your number in minutes.</p>
+
+                <form id="waitlist-form" class="waitlist-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="firstName" placeholder="Alex" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="lastName" placeholder="Chen" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="alex@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Mobile Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="0412 345 678" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <select id="city" name="city" required>
+                            <option value="">Select your city</option>
+                            <option value="sydney">Sydney</option>
+                            <option value="melbourne">Melbourne</option>
+                            <option value="brisbane">Brisbane</option>
+                            <option value="goldcoast">Gold Coast</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan">Preferred Plan</label>
+                        <select id="plan" name="plan" required>
+                            <option value="">Select a plan</option>
+                            <option value="whisper">Whisper - $15/28 days (8GB)</option>
+                            <option value="chat">Chat - $30/28 days (40GB)</option>
+                            <option value="loud">Loud - $50/28 days (100GB)</option>
+                            <option value="undecided">Not sure yet</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="marketing" name="marketing">
+                            <span>Send me updates about small talk (TikTok drops, exclusive offers, memes)</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <span class="btn-text">Join Waitlist</span>
+                        <span class="btn-loading" style="display: none;">Joining...</span>
+                    </button>
+                    <p class="form-note">We'll email you when we launch. No spam, we promise. Read our <a href="#">Privacy Policy</a>.</p>
+                </form>
+
+                <div id="waitlist-success" class="waitlist-success" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>You're on the list!</h3>
+                    <p>Check your email for confirmation. We'll be in touch before launch with your exclusive perks.</p>
+                    <div class="success-stats">
+                        <p class="success-position">You're #<span id="waitlist-position">...</span> in line</p>
+                    </div>
+                    <div class="success-share">
+                        <p>Share with friends and move up the list:</p>
+                        <div class="share-buttons">
+                            <a href="#" class="share-btn" data-platform="twitter">Share on X</a>
+                            <a href="#" class="share-btn" data-platform="instagram">Share on IG</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

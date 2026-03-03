@@ -75,12 +75,27 @@ All plans run on the **Optus 4G/5G network**.
 
 ### Landing Page Sections
 - ✅ Hero with tagline and call-to-action
+- ✅ Launch badge (February 2027)
 - ✅ Brand pillars (Data-First, No Lock-Ins, Community-Led)
 - ✅ Three-tier pricing cards with Japanese translations
 - ✅ Market positioning & differentiators
 - ✅ Launch markets (Sydney, Melbourne, Brisbane, Gold Coast)
-- ✅ Activation CTA section
+- ✅ **Waitlist signup form** with founding member perks
 - ✅ Footer with links and contact info
+
+### Waitlist Features
+- ✅ Full signup form with validation
+- ✅ Australian phone number formatting & validation
+- ✅ Email validation
+- ✅ City & plan selection
+- ✅ Success state with waitlist position
+- ✅ Social sharing buttons
+- ✅ Founding member perks display:
+  - 🎁 Extra 10GB data on first recharge
+  - 💰 Early bird pricing for 6 months
+  - ✨ Priority activation
+- ✅ API endpoint for backend integration (`/api/waitlist`)
+- ✅ Ready for Vercel deployment
 
 ### Interactivity
 - ✅ Smooth scroll navigation
@@ -88,6 +103,8 @@ All plans run on the **Optus 4G/5G network**.
 - ✅ Plan card hover effects
 - ✅ Scroll-triggered animations
 - ✅ Stat counter animation (73% statistic)
+- ✅ Real-time form validation
+- ✅ Phone number auto-formatting
 - ✅ Fully responsive design (mobile, tablet, desktop)
 
 ### Design Principles

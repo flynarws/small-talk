@@ -254,6 +254,31 @@ ul {
     max-width: 540px;
 }
 
+.launch-badge {
+    display: inline-block;
+    background-color: rgba(217, 79, 59, 0.15);
+    border: 1px solid var(--shu-vermillion);
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin-bottom: var(--spacing-md);
+}
+
+.badge-text {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--shu-vermillion);
+    letter-spacing: 0.5px;
+}
+
+.badge-subtext {
+    display: block;
+    font-size: 11px;
+    color: var(--suna-sand);
+    margin-top: 4px;
+}
+
 .hero-cta {
     display: flex;
     gap: var(--spacing-sm);
@@ -579,49 +604,266 @@ ul {
     line-height: 1.6;
 }
 
-/* === ACTIVATE SECTION === */
-.activate {
+/* === WAITLIST SECTION === */
+.waitlist {
     background-color: var(--kinari-cream);
     padding: var(--spacing-xl) 0;
 }
 
-.activate-content {
-    text-align: center;
-    max-width: 700px;
+.waitlist-content {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.activate-title {
+.waitlist-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.waitlist-title {
     font-family: var(--font-display);
     font-size: 42px;
     color: var(--sumi-ink);
     margin-bottom: var(--spacing-sm);
 }
 
-.activate-description {
+.waitlist-description {
     font-size: 16px;
     color: var(--body-gray);
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.waitlist-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
     margin-bottom: var(--spacing-lg);
 }
 
-.activate-options {
+.benefit {
+    background-color: var(--pure-white);
+    border-radius: 8px;
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+.benefit-icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: var(--spacing-sm);
+}
+
+.benefit h4 {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--sumi-ink);
+    margin-bottom: 8px;
+}
+
+.benefit p {
+    font-size: 12px;
+    color: var(--body-gray);
+    line-height: 1.5;
+}
+
+/* Waitlist Form */
+.waitlist-form {
+    background-color: var(--pure-white);
+    border-radius: 12px;
+    padding: var(--spacing-lg);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.form-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
+}
+
+.form-group {
     margin-bottom: var(--spacing-md);
 }
 
-.activate-option h4 {
+.form-group label {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--sumi-ink);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 16px;
     font-family: var(--font-body);
     font-size: 14px;
-    font-weight: 600;
+    color: var(--sumi-ink);
+    background-color: var(--off-white);
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    background-color: var(--pure-white);
+    border-color: var(--shu-vermillion);
+    box-shadow: 0 0 0 3px rgba(217, 79, 59, 0.1);
+}
+
+.form-group input::placeholder {
+    color: var(--tertiary-gray);
+}
+
+.checkbox-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin-top: 2px;
+    cursor: pointer;
+    accent-color: var(--shu-vermillion);
+}
+
+.checkbox-label span {
+    font-size: 13px;
+    color: var(--body-gray);
+    line-height: 1.5;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 16px 32px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--shu-vermillion);
+    color: var(--pure-white);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #C2432F;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(217, 79, 59, 0.3);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.btn-submit:disabled {
+    background-color: var(--suna-sand);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.form-note {
+    text-align: center;
+    font-size: 11px;
+    color: var(--tertiary-gray);
+    margin-top: var(--spacing-sm);
+    line-height: 1.5;
+}
+
+.form-note a {
+    color: var(--shu-vermillion);
+    text-decoration: underline;
+}
+
+/* Success State */
+.waitlist-success {
+    background-color: var(--pure-white);
+    border-radius: 12px;
+    padding: var(--spacing-xl);
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--matcha);
+    color: var(--pure-white);
+    font-size: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+}
+
+.waitlist-success h3 {
+    font-family: var(--font-display);
+    font-size: 28px;
     color: var(--sumi-ink);
     margin-bottom: var(--spacing-sm);
 }
 
-.activate-note {
-    font-size: 12px;
-    color: var(--tertiary-gray);
+.waitlist-success > p {
+    font-size: 14px;
+    color: var(--body-gray);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.success-stats {
+    background-color: var(--off-white);
+    border-radius: 8px;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.success-position {
+    font-family: var(--font-display);
+    font-size: 20px;
+    color: var(--shu-vermillion);
+    margin: 0;
+}
+
+.success-share p {
+    font-size: 13px;
+    color: var(--body-gray);
+    margin-bottom: var(--spacing-sm);
+}
+
+.share-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+}
+
+.share-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: var(--sumi-ink);
+    color: var(--kinari-cream);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    background-color: var(--ai-indigo);
+    transform: translateY(-2px);
 }
 
 /* === FOOTER === */
@@ -747,7 +989,11 @@ ul {
         grid-template-columns: 1fr;
     }
 
-    .activate-options {
+    .waitlist-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
         grid-template-columns: 1fr;
     }
 
@@ -785,8 +1031,12 @@ ul {
         font-size: 28px;
     }
 
-    .activate-title {
+    .waitlist-title {
         font-size: 32px;
+    }
+
+    .share-buttons {
+        flex-direction: column;
     }
 
     .footer-links {

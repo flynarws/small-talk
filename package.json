@@ -1,0 +1,24 @@
+{
+  "name": "small-talk",
+  "version": "1.0.0",
+  "description": "small talk - Prepaid mobile for Gen Z Australia. Talk Less. Connect More.",
+  "main": "api/waitlist.js",
+  "scripts": {
+    "dev": "node api/waitlist.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mvno",
+    "prepaid",
+    "mobile",
+    "gen-z",
+    "australia"
+  ],
+  "author": "small talk",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
